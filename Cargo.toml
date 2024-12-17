@@ -1,0 +1,27 @@
+[package]
+name = "actix-todo-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-http = "3.9.0"
+actix-service = "2.0.2"
+actix-web = "4.9.0"
+actix-web-httpauth = "0.8.2"
+bcrypt = "0.16.0"
+chrono = { version = "0.4.39", features = ["serde"] }
+diesel = { version = "2.2.6", features = ["postgres", "uuid", "r2d2", "chrono"] }
+diesel_migrations = "2.2.0"
+dotenv = "0.15.0"
+futures = "0.3.31"
+jsonwebtoken = "9.3.0"
+r2d2 = "0.8.10"
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.133"
+thiserror = "2.0.7"
+uuid = {version = "1.11.0", features = ["serde", "v4"]}
+
+
+[features]
+default = []
+proc-macro = []  
